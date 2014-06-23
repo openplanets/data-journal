@@ -66,9 +66,9 @@ and then edit the config.proxy settings in the [Vagrantfile](Vagrantfile) file t
 
 After installing the box, from your local project directory issue the command ```vagrant up```. This will start the
 headless VM.  If this is the first time you've run the command the it will provision the VM, that is install the
-appropriate software for the Data Journal. This is achieved by running the [bootstrap.sh](../provision/bootstrap.sh)
-shell script. Open a browser and visit (http://localhost:2020/datajournal/) which should show the Data Journal home
-page.
+appropriate software for the Data Journal. This is achieved by running the [bootstrap.sh](./provision/bootstrap.sh)
+shell script. Open a browser and visit [http://localhost:2020/datajournal/](http://localhost:2020/datajournal/) which
+should show the Data Journal home page.
 
 To stop the Data Journal, from your local project directory issue the command ```vagrant halt```.  This will shut down
 the VM however the Vagrant box will continue to take up local resources, i.e. disk space, in the ```.vagrant```
@@ -80,7 +80,7 @@ To restart the VM at any time issue the ```vagrant up``` command from the projec
 
 To completely remove all trace of your Data Journal VM issue the command ```vagrant destroy``` from the local project
 directory.  Issuing ```vagrant up``` will still re-create the machine, and will re-run
-[bootstrap.sh](../provision/bootstrap.sh).  Issuing these commands effectively resets the machine to a pristine state.
+[bootstrap.sh](../../provision/bootstrap.sh).  Issuing these commands effectively resets the machine to a pristine state.
 
 ## More Information
 
