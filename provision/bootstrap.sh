@@ -30,7 +30,7 @@ ln -fs /vagrant/datajournal/datajournal.properties /var/lib/tomcat6/datajournal.
 
 # fc repo
 echo "setting up the fc repo"
-if [ !n -f /vagrant/datajournal/webapps/fcrepo.war ] 
+if [ ! -f /vagrant/datajournal/webapps/fcrepo.war ] 
 	then
 	wget https://docs.google.com/uc?export=download&confirm=wvS0&id=0B5nd_qlYdcqyM0pNbmJrSzh1dW8
 	mv fcrepo.war /vagrant/datajournal/webapps/
@@ -49,9 +49,9 @@ apt-get install unzip
 useradd -m fuseki
 cd /home/fuseki
 su - fuseki
-wget http://apache.mirror.1000mbps.com/jena/binaries/jena-fuseki-1.0.1-distribution.zip
-unzip jena-fuseki-1.0.1-distribution.zip
-cd jena-fuseki-1.0.1
+wget http://apache.mirror.1000mbps.com/jena/binaries/jena-fuseki-1.0.2-distribution.zip
+unzip jena-fuseki-1.0.2-distribution.zip
+cd jena-fuseki-1.0.2
 chmod a+x s-*
 mkdir ROData
 chown fuseki * -R
