@@ -80,7 +80,7 @@ To restart the VM at any time issue the ```vagrant up``` command from the projec
 
 To completely remove all trace of your Data Journal VM issue the command ```vagrant destroy``` from the local project
 directory.  Issuing ```vagrant up``` will still re-create the machine, and will re-run
-[bootstrap.sh](../../provision/bootstrap.sh).  Issuing these commands effectively resets the machine to a pristine state.
+[bootstrap.sh](./provision/bootstrap.sh).  Issuing these commands effectively resets the machine to a pristine state.
 
 ## More Information
 
