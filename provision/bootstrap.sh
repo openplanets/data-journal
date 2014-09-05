@@ -40,7 +40,7 @@ ln -fs /vagrant/datajournal/webapps/fcrepo.war /var/lib/tomcat6/webapps/fcrepo.w
 # now replace jars with iro ones
 cp /vagrant/datajournal/webapps/scape-platform-datamodel-0.1.8-SNAPSHOT.jar /var/lib/tomcat6/webapps/fcrepo/WEB-INF/lib/
 cp /vagrant/datajournal/webapps/iro-0.0.1-SNAPSHOT.jar /var/lib/tomcat6/webapps/fcrepo/WEB-INF/lib/
-echo 'JAVA_OPTS="${JAVA_OPTS} -Dfcrepo.home=/tmp/fcrepo4-home -Dscap.fcrepo.content.referenced=true"' >> /etc/default/tomcat6
+echo 'JAVA_OPTS="${JAVA_OPTS} -Dfcrepo.home=/tmp/fcrepo4-home -Dscap.fcrepo.content.referenced=true -DREPUB_CLIENT_HOME=/vagrant/datajournal/epubs"' >> /etc/default/tomcat6
 /etc/init.d/tomcat6 restart
 
 # fuseki
@@ -49,9 +49,9 @@ apt-get install unzip
 useradd -m fuseki
 cd /home/fuseki
 su - fuseki
-wget http://apache.mirror.1000mbps.com/jena/binaries/jena-fuseki-1.0.2-distribution.zip
-unzip jena-fuseki-1.0.2-distribution.zip
-cd jena-fuseki-1.0.2
+wget https://archive.apache.org/dist/jena/binaries/jena-fuseki-1.1.0-distribution.zip
+unzip jena-fuseki-1.1.0-distribution.zip
+cd jena-fuseki-1.1.0
 chmod a+x s-*
 mkdir ROData
 chown fuseki * -R
