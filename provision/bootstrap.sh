@@ -66,5 +66,10 @@ unset http_proxy;./s-put http://localhost:3030/ResearchObject/data ROData /vagra
 echo "load pankos data"
 unset http_proxy;./s-update --service http://localhost:3030/ResearchObject/update 'CLEAR GRAPH <pankos>'
 unset http_proxy;./s-put http://localhost:3030/ResearchObject/data pankos /vagrant/datajournal/pankos.ttl
+
+echo "load annotation data"
+unset http_proxy;./s-update --service http://localhost:3030/ResearchObject/update 'CLEAR GRAPH <annotation>'
+unset http_proxy;./s-put http://localhost:3030/ResearchObject/data annotation /vagrant/datajournal/annotation.ttl
+
 exit
 
