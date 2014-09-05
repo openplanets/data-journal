@@ -9279,6 +9279,18 @@
       :facilitycycle_startDate
               "2009-11-10T00:00:00Z"^^xsd:dateTime .
 
+<https://icatisis.esc.rl.ac.uk/facilityCycle/59>
+      a       :FacilityCycle ;
+      :facilitycycle_description
+              "ISIS Cycle"^^xsd:string ;
+      :facilitycycle_endDate
+              "2010-08-12T00:00:00Z"^^xsd:dateTime ;
+      :facilitycycle_facility
+              <https://icatisis.esc.rl.ac.uk/facility/1> ;
+      :facilitycycle_name "cycle_10_2"^^xsd:string ;
+      :facilitycycle_startDate
+              "2010-06-22T00:00:00Z"^^xsd:dateTime .
+
 <https://icatisis.esc.rl.ac.uk/parameterType/69>
       a       :ParameterType ;
       :parametertype_applicableToDatafile
