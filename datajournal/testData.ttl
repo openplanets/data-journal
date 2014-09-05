@@ -29421,3 +29421,85 @@ xsd:date
                 "3.1"^^xsd:string ;
         :application_doi
                 <doi:10.5286/SOFTWARE/MANTID3.1> .
+                
+<https://icatisis.esc.rl.ac.uk/instrument/16>
+        a                        :Instrument ;
+        :instrument_description  "\"SXD, the Single Crystal Diffractometer, uses the time-of-flight Laue technique to access large 3-D volumes of reciprocal space in a single measurement. This makes SXD especially powerful in applications involving surveys of reciprocal space, such as phase transitions and incommensurate structures, and also in applications where sample orientation may be restricted. Applications of SXD have included routine structural studies and diffuse scattering. The structure determination programme reflects the strength of single crystal neutron diffraction in studies of non-bonded contacts, specifically those involving hydrogen atoms, thermal parameter analysis, and in the area of charge density studies where neutron diffraction data provide complementary information to high resolution X-ray studies. A recent innovation has resulted from exploitation of the flexible data collection method offered by the time-of-flight Laue technique, which allows data sets to be collected in relatively short periods of time. The ability to measure a structure at more than one temperature can have significant benefits, either to characterise thermal parameter behaviour (methyl group librations in paracetamol) or to study disorder (proton transfer in benzoic acid). Diffuse scattering caused by both dynamic and static effects can be studied, allowing short range structure, defect structure and local orientational correlations to be probed. A major area of interest is in developing methods to allow the Bragg and diffuse scattering to be used together in an integrated way to give a full picture of the structure under study. Much of the potential of SXD has been realised since the installation of a second position- sensitive detector, which increased the volume of reciprocal space accessed and hence the data collection rate. Recently, in October 1999, a grant of ¿1million was awarded by EPSRC to upgrade the SXD detectors. This will allow the provision of a total of 11 detectors, almost completely surrounding the sample position. These are scheduled to be installed during spring 2001.\""^^xsd:string ;
+        :instrument_fullName     "SXD"^^xsd:string ;
+        :instrument_imageUrl     "http://www.isis.stfc.ac.uk/images/instruments/sxd/200sxd-instrument-6499.jpg"^^xsd:string ;
+        :instrument_name         "SXD"^^xsd:string ;
+        :instrument_type         "Crystallography"^^xsd:string ;
+        :instrument_url          "http://www.isis.stfc.ac.uk/instruments/sxd/"^^xsd:string .                
+
+<https://icatisis.esc.rl.ac.uk/parameterType/1044>
+        a                           :ParameterType ;
+        :parametertype_applicableToDatafile
+                false ;
+        :parametertype_applicableToDataset
+                false ;
+        :parametertype_applicableToInvestigation
+                true ;
+        :parametertype_applicableToSample
+                false ;
+        :parametertype_description  "Range of runs in investigation"^^xsd:string ;
+        :parametertype_enforced     false ;
+        :parametertype_maximumNumericValue
+                "0.0"^^xsd:double ;
+        :parametertype_minimumNumericValue
+                "0.0"^^xsd:double ;
+        :parametertype_name         "run_number_range"^^xsd:string ;
+        :parametertype_parameter    <https://icatisis.esc.rl.ac.uk/investigationParameter/301355> ;
+        :parametertype_units        "None"^^xsd:string ;
+        :parametertype_valueType    "STRING"^^xsd:string ;
+        :parametertype_verified     true .
+
+<https://icatisis.esc.rl.ac.uk/investigation/24079414>
+        a                           :Investigation , <http://purl.org/dc/dcmitype/Dataset> ;
+        :investigation_citation     "Dr Amber Thompson; (2010): Reversible B-H Bond Activation at Cationic Rh(III) Centres:  Structural Characterization of Key Hydrogen-containing Intermediates, STFC ISIS Facility, doi:10.5286/ISIS.E.24079414."^^xsd:string ;
+        :investigation_dataset      <https://icatisis.esc.rl.ac.uk/dataset/24080009> ;
+        :investigation_doi          "10.5286/ISIS.E.24079414"^^xsd:string ;
+        :investigation_endDate      "2010-07-27T04:17:49Z"^^xsd:dateTime ;
+        :investigation_facility     <https://icatisis.esc.rl.ac.uk/facility/1> ;
+        :investigation_instrument   <https://icatisis.esc.rl.ac.uk/instrument/16> ;
+        :investigation_investigationUser
+                <https://icatisis.esc.rl.ac.uk/investigationUser/1311> ;
+        :investigation_name         "1010274"^^xsd:string ;
+        :investigation_parameter    <https://icatisis.esc.rl.ac.uk/investigationParameter/301355> ;
+        :investigation_releaseDate  "2013-07-27T04:17:49Z"^^xsd:dateTime ;
+        :investigation_startDate    "2010-06-30T12:26:01Z"^^xsd:dateTime ;
+        :investigation_summary      "Catalytic processes leading to the functionalization of organic molecules by boron-containing reagents are highly topical ¿ ranging from transition metal catalysed hydro- and diboration of multiple bonds to direct hydrocarbon C-H activation. We have been investigating the use of metal borylene complexes [LnM(BNR2)] in related functionalization chemistry, a goal which necessitates the direct synthesis of such compounds from readily available borane reagents, of the types H3B.NHR2 or H2BNR2. In attempting to determine mechanistic details for the conversion of H3B.NHR2 to LnM(BNR2) we have uncovered a reversible ¿hydrogen shuttling¿ process, and are seeking access to neutron diffraction experiments in order to unambiguously define the structures of key intermediate species."^^xsd:string ;
+        :investigation_title        "Reversible B-H Bond Activation at Cationic Rh(III) Centres:  Structural Characterization of Key Hydrogen-containing Intermediates"^^xsd:string ;
+        :investigation_type         <https://icatisis.esc.rl.ac.uk/investigationType/4> .
+
+<https://icatisis.esc.rl.ac.uk/datasetType/4>
+        a                         :DatasetType ;
+        :datasettype_dataset      <https://icatisis.esc.rl.ac.uk/dataset/24080009> ;
+        :datasettype_description  "RAW data collected at the facility during an experiment."^^xsd:string ;
+        :datasettype_name         "experiment_raw"^^xsd:string .
+
+<https://icatisis.esc.rl.ac.uk/investigationParameter/301355>
+        a                       :InvestigationParameter ;
+        :investigationparameter_investigation
+                <https://icatisis.esc.rl.ac.uk/investigation/24079414> ;
+        :parameter_stringValue  "23617-23626, 23679-23685"^^xsd:string ;
+        :parameter_type         <https://icatisis.esc.rl.ac.uk/parameterType/1044> .
+
+<https://icatisis.esc.rl.ac.uk/investigationUser/1311>
+        a                        :InvestigationUser ;
+        :investigationuser_investigation
+                <https://icatisis.esc.rl.ac.uk/investigation/24079414> ;
+        :investigationuser_role  "experimenter"^^xsd:string ;
+        :investigationuser_user  <https://icatisis.esc.rl.ac.uk/user/14157> .
+
+<https://icatisis.esc.rl.ac.uk/user/14157>
+        a               :User ;
+        :user_fullName  "Dr Amber Thompson"^^xsd:string .
+
+<https://icatisis.esc.rl.ac.uk/dataset/24080009>
+        a                       :Dataset ;
+        :dataset_complete       true ;
+        :dataset_description    "SXD23617 Aldridge/Thompson/TaRhImes2H2[BHNMe2]BArF4 T30-JUN-2010 16:09:30 2500.08"^^xsd:string ;
+        :dataset_investigation  <https://icatisis.esc.rl.ac.uk/investigation/24079414> ;
+        :dataset_name           "Default"^^xsd:string ;
+        :dataset_type           <https://icatisis.esc.rl.ac.uk/datasetType/4> .
+             
